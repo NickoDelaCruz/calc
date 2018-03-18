@@ -32,5 +32,8 @@ describe('Calculator', function() {
     let Age = new Calculator(55, "11-21-1963");
     expect(Age.age2Jupiter()).toBeGreaterThanOrEqual(4);
   });
-
+    it('Takes userBday and adds 105 then divide by 2 for a average life expectancy on earth', function() {
+    var avg = new Calculator(21);
+    expect(avg.AvgLifeEarth()).toBeGreaterThanOrEqual(63)
+  });
 });
