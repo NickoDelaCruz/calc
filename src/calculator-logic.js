@@ -1,7 +1,11 @@
 export class Calculator {
   constructor(EarthAge){
   this.EarthAge = EarthAge;
+  this.currentDate = Date.now();
+
 }
+
+
   age2Seconds() {
     let Age2Seconds = this.EarthAge * 31536000;
     return Age2Seconds;
