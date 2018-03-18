@@ -1,7 +1,7 @@
 export class Calculator {
   constructor(EarthAge){
   this.EarthAge = EarthAge;
-  this.currentDate = Date.now();
+  // this.currentDate = Date.now();
 
 }
 
