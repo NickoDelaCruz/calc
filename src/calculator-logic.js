@@ -7,8 +7,12 @@ export class Calculator {
     let Age2Seconds = this.userBday * 31536000;
     return Age2Seconds;
   }
-  mercuryAge() {
-    let mercuryAge = Math.floor((this.userBday / 0.24));
-    return mercuryAge;
+
+  age2Mercury() {
+    let ageMerc = Math.floor((this.userBday / 0.24));
+    return ageMerc;
   }
+
+
+
 }
