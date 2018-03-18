@@ -28,4 +28,9 @@ describe('Calculator', function() {
     expect(Age.age2Mars()).toBeGreaterThanOrEqual(11);
   });
 
+  it('Takes userBday and converts it into Jupiter Age', function() {
+    let Age = new Calculator(55, "11-21-1963");
+    expect(Age.age2Jupiter()).toBeGreaterThanOrEqual(4);
+  });
+
 });

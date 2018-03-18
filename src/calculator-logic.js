@@ -20,5 +20,9 @@ export class Calculator {
     let ageMars = Math.floor((this.EarthAge / 1.88));
     return ageMars;
   }
+  age2Jupiter() {
+    let ageJupiter = Math.floor((this.EarthAge / 11.86));
+    return ageJupiter;
+  }
 
 }
