@@ -47,8 +47,8 @@ describe('Calculator', function() {
     expect(avg.AvgLifeVenus()).toBeGreaterThanOrEqual(69)
   });
 
-  it('Calculates Earth age to Mars age and gets life expentancy on Venus', function() {
+  it('Calculates Earth age to Mars age and gets life expentancy on Mars', function() {
     var avg = new Calculator(21);
-    expect(avg.AvgLifeMars()).toBeGreaterThanOrEqual()
+    expect(avg.AvgLifeMars()).toBeGreaterThanOrEqual(80)
   });
 });
