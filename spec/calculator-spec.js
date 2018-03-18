@@ -14,13 +14,18 @@ describe('Calculator', function() {
   });
 
   it('Takes userBday and converts it into Mercury Age', function() {
-    let Age = new Calculator(1);
-    expect(Age.age2Mercury()).toBeGreaterThanOrEqual(4, 4.3);
+    let Age = new Calculator(21, "11-21-1996");
+    expect(Age.age2Mercury()).toBeGreaterThanOrEqual(87);
   });
 
   it('Takes userBday and converts it into Venus Age', function() {
-    let Age = new Calculator();
-    expect(Age.NAME()).toBeGreaterThanOrEqual();
+    let Age = new Calculator(21, "11-21-1996");
+    expect(Age.age2Venus()).toBeGreaterThanOrEqual(33);
+  });
+
+  it('Takes userBday and converts it into Mars Age', function() {
+    let Age = new Calculator(21, "11-21-1996");
+    expect(Age.age2Mars()).toBeGreaterThanOrEqual(11);
   });
 
 });
