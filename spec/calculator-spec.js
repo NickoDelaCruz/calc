@@ -1,11 +1,21 @@
 import { Calculator } from './../src/calculator-logic.js';
 describe('Calculator', function() {
-  let Character;
+  let calculator;
+
+
   beforeEach(function() {
-    Character = new Calculator();
+    calculator = new Calculator();
   });
+
+
   it('Takes users age and converts it into seconds', function() {
-    var Age = new Calculator(5);
-    expect(Age.Age2Seconds()).toEqual(157680000)
+    let Age = new Calculator(5);
+    expect(Age.age2Seconds()).toEqual(157680000)
   });
+
+  it('Takes userBday and converts it into Mercury Age', function() {
+    let Age = new Calculator(1);
+    expect(Age.mercuryAge()).toBeGreaterThanOrEqual(4, 4.3);
+  });
+
 });
