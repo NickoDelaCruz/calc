@@ -1,14 +1,11 @@
 export class Calculator {
-  constructor() {
-    this.birthDate;
-    this.todayDate;
-    this.DateInSeconds;
-    this.todaysDateInSeconds;
-    this.usersAge;
+  constructor(userBday){
+  this.userBday = userBday;
+
+}
+  Age2Seconds() {
+    let ageSecs = this.userBday * 31536000;
+    return ageSecs;
   }
 
-  ToSeconds() {
-    this.userDateInSeconds = ((this.birthDate.getTime())/1000);
-    this.todaysDateInSeconds = ((this.todayDate.getTime())/1000);
-  }
 }
