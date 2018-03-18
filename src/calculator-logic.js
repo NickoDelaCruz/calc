@@ -23,7 +23,7 @@ export class Calculator {
     return ageJupiter;
   }
   AvgLifeEarth() {
-    let avgEarth = 105 + this.EarthAge / 2;
+    let avgEarth = this.EarthAge + 150 / 2;
     return avgEarth;
   }
 
@@ -33,7 +33,7 @@ export class Calculator {
   }
 
   AvgLifeVenus() {
-    let avgVenus = Math.floor((this.EarthAge / 0.62 + 100 / 2));
+    let avgVenus = Math.floor((this.EarthAge / 0.62 + 130 / 2));
     return avgVenus;
   }
 
