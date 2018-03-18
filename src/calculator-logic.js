@@ -4,8 +4,7 @@ export class Calculator {
 
 }
   Age2Seconds() {
-    let ageSecs = this.userBday * 31536000;
-    return ageSecs;
+    let Age2Seconds = this.userBday * 31536000;
+    return Age2Seconds;
   }
-
 }
