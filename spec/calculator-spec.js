@@ -39,7 +39,7 @@ describe('Calculator', function() {
 
   it('Calculates Earth age to Mercury age and gets life expentancy on Mercury', function() {
     var avg = new Calculator(21);
-    expect(avg.AvgLifeMercury()).toBeGreaterThanOrEqual(93)
+    expect(avg.AvgLifeMercury()).toBeGreaterThanOrEqual(81)
   });
 
   it('Calculates Earth age to Venus age and gets life expentancy on Venus', function() {
