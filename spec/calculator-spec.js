@@ -37,9 +37,15 @@ describe('Calculator', function() {
     expect(avg.AvgLifeEarth()).toBeGreaterThanOrEqual(63)
   });
 
-  it('Takes userBday and adds 105 then divide by 2 for a average life expectancy on earth', function() {
+  it('Calculates Earth age to Mercury age and gets life expentancy on Mercury', function() {
     var avg = new Calculator(21);
     expect(avg.AvgLifeMercury()).toBeGreaterThanOrEqual(93)
   });
+
+  it('Calculates Earth age to Venus age and gets life expentancy on Venus', function() {
+    var avg = new Calculator(21);
+    expect(avg.AvgLifeVenus()).toBeGreaterThanOrEqual(69)
+  });
+
 
 });

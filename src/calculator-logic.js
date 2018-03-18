@@ -28,9 +28,11 @@ export class Calculator {
   }
 
   AvgLifeMercury() {
-    let avgMerc = this.EarthAge / 0.24 + 100 / 2;
+    let avgMerc = Math.floor((this.EarthAge / 0.24 + 100 / 2));
     return avgMerc;
   }
+
+  
 
 
 }
