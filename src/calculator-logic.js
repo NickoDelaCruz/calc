@@ -32,7 +32,8 @@ export class Calculator {
     return avgMerc;
   }
 
-  
-
-
+  AvgLifeVenus() {
+    let avgVenus = Math.floor((this.EarthAge / 0.62 + 100 / 2));
+    return avgVenus;
+  }
 }
