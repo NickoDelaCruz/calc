@@ -4,7 +4,14 @@ export class Calculator {
   // this.currentDate = Date.now();
 
 }
-
+compare(date1, date2) {
+  let past = new Date(date1);
+  let pastSeconds = past.getTime() / 1000;
+  let future = new Date(date2);
+  let futureSeconds = future.getTime() / 1000;
+  let diff = futureSeconds - pastSeconds;
+  return diff;
+}
 
   age2Seconds() {
     let Age2Seconds = this.EarthAge * 31536000;

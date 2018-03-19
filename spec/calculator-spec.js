@@ -1,19 +1,17 @@
 import { Calculator } from './../src/calculator-logic.js';
 describe('Calculator', function() {
   let calculator;
-
-
   beforeEach(function() {
     calculator = new Calculator();
   });
 
-  // it('Takes two dates and checks the difference by seconds', function() {
-  //   let dateone_yesterday = new Date(2018, 1, 1);
-  //   let datetwo_later = new Date(2018, 1, 30);
-  //   let dateoneSeconds = dateone_yesterday.getTime() / 1000;
-  //   let datetwoSeconds =  datetwo_later.getTime() / 1000;
-  //   expect(calculator.compareDates(dateone_yesterday, datetwo_later)).toEqual(2505600);
-  // });
+  it('Takes two dates and checks the difference by seconds', function() {
+    let past = new Date(2018, 1, 1);
+    let future = new Date(2018, 1, 30);
+    let dateoneSeconds = past.getTime() / 1000;
+    let datetwoSeconds =  future.getTime() / 1000;
+    expect(calculator.compare(past, future)).toEqual(2505600);
+  });
 
   it('Takes users age and converts it into seconds', function() {
     let Age = new Calculator(5, "5 years");
