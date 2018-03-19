@@ -1,6 +1,5 @@
 # Age Calculator
 
-
 #### Nicko Dela Cruz
 
 ## Description
@@ -40,13 +39,13 @@ $ npm run test
   * Out: 70-80 (Venus years: between these ages you will die in Venus.)
 
 
-
-
-
 ## Technologies Used
 
 * JavaScript
 * Webpack
+* Jasmine
+* Karma
+* ndm
 
 
 ## License
