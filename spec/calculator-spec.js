@@ -57,9 +57,9 @@ describe('Calculator', function() {
     expect(avg.AvgLifeMars()).toBeGreaterThanOrEqual(80)
   });
 
-  // it('Calculates Earth age to Jupiter age and gets life expentancy on Jupiter', function() {
-  //   var avg = new Calculator(21);
-  //   expect(avg.AvgLifeJupiter()).toBeGreaterThanOrEqual()
-  // });
+  it('Calculates Earth age to Jupiter age and gets life expentancy on Jupiter', function() {
+    var avg = new Calculator(21);
+    expect(avg.AvgLifeJupiter()).toBeGreaterThanOrEqual(75)
+  });
 
 });

@@ -52,4 +52,10 @@ compare(date1, date2) {
     let avgMars = Math.floor((this.EarthAge / 1.88 + 150 / 2));
     return avgMars;
   }
+
+  AvgLifeJupiter() {
+    let avgJupiter = Math.floor((this.EarthAge / 11.86 + 150 / 2));
+    return avgJupiter;
+  }
+
 }
